@@ -25,7 +25,7 @@ def build(src, extra_args=None):
         with open(dockerfile_path, 'rb') as dockerfile:
             docker(['build', '-q', '-t', image, '-'], dockerfile.read())
     else:
-        image = 'klokantech/dpkg-buildpackage'
+        image = 'lopesivan/dpkg-buildpackage'
     args = [
         'run', '--rm',
         '-v', '{}/:/mnt/src/'.format(src),
