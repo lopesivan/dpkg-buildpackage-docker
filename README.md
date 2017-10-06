@@ -1,8 +1,9 @@
+Thid is a [FORK TEST]
 # Debian `dpkg-buildpackage` for Docker
 
 This software consists of two parts:
 
-1. A base Docker image `klokantech/dpkg-buildpackage` built
+1. A base Docker image `lopesivan/dpkg-buildpackage` built
    automatically by Docker Hub from the `Dockerfile` in this
    repository.
 
@@ -14,7 +15,7 @@ This software consists of two parts:
 
 ```shell
 $ pip install -e \
-git+https://github.com/klokan/dpkg-buildpackage.git@master#egg=dpkg-buildpackage
+git+https://github.com/lopesivan/dpkg-buildpackage.git@master#egg=dpkg-buildpackage
 ```
 
 
@@ -34,6 +35,6 @@ a custom `debian/Dockerfile` file and it will be automatically
 built and used to generate the package. There are some restrictions
 it must adhere to.
 
-1. It must descend from the `klokantech/dpkg-buildpackage` base image.
+1. It must descend from the `lopesivan/dpkg-buildpackage` base image.
 
 2. It must not modify `ENTRYPOINT` or `CMD`.
