@@ -15,7 +15,7 @@ This software consists of two parts:
 
 ```shell
 $ pip install -e \
-git+https://github.com/lopesivan/dpkg-buildpackage.git@master#egg=dpkg-buildpackage
+git+https://github.com/lopesivan/dpkg-buildpackage-docker.git@master#egg=dpkg-buildpackage
 ```
 
 
